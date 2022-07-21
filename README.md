@@ -14,5 +14,5 @@ CRUD Control de Clientes con Arquitectura de Spring. Capa de Presentación, Capa
 - PersonaServiceImpl
 
 **Capa Datos**
-- Persona<
+- Persona
 - PersonaDao
