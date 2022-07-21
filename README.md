@@ -6,13 +6,13 @@ CRUD Control de Clientes con Arquitectura de Spring. Capa de Presentación, Capa
 ### Arquitectura de Spring
 
 **Capa Presentación**
-ControladorInicio
-index
+- ControladorInicio
+- index
 
 **Capa Negocio**
-IPersonaService
-PersonaServiceImpl
+- IPersonaService
+- PersonaServiceImpl
 
 **Capa Datos**
-Persona<
-PersonaDao
+- Persona<
+- PersonaDao
