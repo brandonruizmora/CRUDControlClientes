@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>
 </head>
 <body>
 <h1>Hola Mundo</h1>
+<div th:if="${personas != null and !personas.empty}">
+    <h3>Lista de Clientes</h3>
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+        </tr>
+        <tr th:each="persona: ${personas}">
+            <td th:text="${persona.nombre}"></td>
+            <td th:text="${persona.apellido}"></td>
+            <td th:text="${persona.email}"></td>
+            <td th:text="${persona.telefono}"></td>
+        </tr>
+    </table>
+</div>
+<div th:if="${personas == null or personas.empty}">
+    <h3>No hay datos que mostrar</h3>
+</div>
 </body>
 </html>
